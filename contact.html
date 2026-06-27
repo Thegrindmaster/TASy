@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Book a Free Consultation | Tehilla Amplify Solutions Nigeria</title>
+    <meta name="description" content="Contact Tehilla Amplify Solutions. Book a free consultation, call us, or send a message. Business growth, registration, compliance, and recruitment services in Nigeria.">
+    <meta name="keywords" content="contact TAS, Tehilla Amplify Solutions contact, book consultation Nigeria, business consultation Lagos, free consultation, business growth Nigeria, CAC registration inquiry">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Contact Us | Tehilla Amplify Solutions">
+    <meta property="og:description" content="Book a free consultation. We're ready to amplify your business.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tehilla Amplify Solutions">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Tehilla Amplify Solutions">
+    <meta name="twitter:description" content="Book a free consultation for business growth, registration, or recruitment in Nigeria.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'sans': ['Inter', 'system-ui', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-grid-pattern min-h-screen">
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="flex flex-col items-center gap-4">
+            <img src="t.jpeg" alt="TAS" class="w-16 h-16 rounded-2xl object-cover">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl overflow-hidden bg-gradient-to-br from-cyan-500 to-orange-500 flex items-center justify-center font-bold text-white text-lg transform group-hover:scale-110 transition-transform"><img src="t.jpeg" alt="TAS" class="w-full h-full object-cover"></div>
+                    <div>
+                        <span class="text-white font-bold text-lg tracking-tight">TAS</span>
+                        <span class="hidden sm:block text-[10px] text-slate-400 -mt-1 tracking-wider uppercase">Tehilla Amplify Solutions</span>
+                    </div>
+                </a>
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="index.html" class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Home</a>
+                    <a href="about.html" class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">About</a>
+                    <div class="relative group">
+                        <button class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-all flex items-center gap-1">
+                            Solutions
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+                            <div class="bg-slate-800/95 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl p-2">
+                                <a href="solutions.html" class="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">All Solutions</a>
+                                <a href="growtify.html" class="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">
+                                    <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span>Growtify</span>
+                                </a>
+                                <a href="regify.html" class="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">
+                                    <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-400"></span>Regify</span>
+                                </a>
+                                <a href="whofit.html" class="block px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">
+                                    <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>WhoFit</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-link px-4 py-2 text-sm text-slate-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Contact</a>
+                </div>
+                <!-- CTA + Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <a href="contact.html" class="hidden md:inline-flex items-center px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-orange-500 rounded-full hover:shadow-lg hover:shadow-cyan-500/25 transform hover:-translate-y-0.5 transition-all">
+                        Book Consultation
+                    </a>
+                    <button id="mobile-menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Toggle menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden">
+            <div class="bg-slate-900/98 backdrop-blur-xl border-t border-white/5 px-4 py-6 space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Home</a>
+                <a href="about.html" class="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">About</a>
+                <a href="solutions.html" class="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Solutions</a>
+                <a href="growtify.html" class="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all pl-8 text-sm">↳ Growtify</a>
+                <a href="regify.html" class="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all pl-8 text-sm">↳ Regify</a>
+                <a href="whofit.html" class="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all pl-8 text-sm">↳ WhoFit</a>
+                <a href="contact.html" class="block px-4 py-3 text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Contact</a>
+                <div class="pt-4 border-t border-white/5 flex items-center justify-center gap-4">
+                    <a href="https://www.instagram.com/tehillaamplifysolutions" target="_blank" rel="noopener" class="text-slate-400 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="https://www.facebook.com/share/1HNxK9GtK4/" target="_blank" rel="noopener" class="text-slate-400 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="https://www.tiktok.com/@tehillaamplify" target="_blank" rel="noopener" class="text-slate-400 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                    <a href="https://www.linkedin.com/in/tasy-tehilla-amplify-solutions-724598404" target="_blank" rel="noopener" class="text-slate-400 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="https://x.com/TehillaAmplify" target="_blank" rel="noopener" class="text-slate-400 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+                <div class="pt-4">
+                    <a href="contact.html" class="block w-full text-center px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-orange-500 rounded-full">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <!-- Decorative Orbs -->
+        <div class="gradient-orb gradient-orb-blue w-[500px] h-[500px] -top-40 -right-40 absolute"></div>
+        <div class="gradient-orb gradient-orb-violet w-[400px] h-[400px] -bottom-20 -left-20 absolute"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="reveal">
+                <span class="badge badge-blue mb-6">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    Get In Touch
+                </span>
+            </div>
+            <h1 class="text-hero font-extrabold text-white mb-6 reveal reveal-delay-1">
+                Let's <span class="gradient-text">Amplify</span> Your<br class="hidden sm:block"> Business Together
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed reveal reveal-delay-2">
+                Ready to take the next step? Book a free consultation, send us a message, or connect with our team directly.
+            </p>
+            <!-- Scroll indicator -->
+            <div class="mt-12 reveal reveal-delay-3">
+                <a href="#contact-form" class="inline-flex flex-col items-center gap-2 text-slate-500 hover:text-blue-400 transition-colors">
+                    <span class="text-xs uppercase tracking-widest">Scroll Down</span>
+                    <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-line max-w-7xl mx-auto"></div>
+
+    <!-- Contact Grid Section -->
+    <section id="contact-form" class="relative py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+
+                <!-- LEFT: Contact Form (3 columns wide) -->
+                <div class="lg:col-span-3 reveal-left">
+                    <div class="glass-card glass-card-blue p-8 sm:p-10">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Send Us a Message</h2>
+                        <p class="text-slate-400 text-sm mb-8">Fill out the form below and our team will get back to you within 24 hours.</p>
+
+                        <!-- FORM SUBMISSION INTEGRATION GOES HERE -->
+                        <form data-form action="#" method="POST" class="space-y-6">
+                            <!-- Row: Full Name + Email -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="full-name" class="form-label">Full Name <span class="text-red-400">*</span></label>
+                                    <input type="text" id="full-name" name="full_name" required placeholder="John Doe" class="form-input" aria-label="Full Name">
+                                </div>
+                                <div>
+                                    <label for="email" class="form-label">Email Address <span class="text-red-400">*</span></label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com" class="form-input" aria-label="Email Address">
+                                </div>
+                            </div>
+
+                            <!-- Row: Phone + Company -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" class="form-input" aria-label="Phone Number">
+                                </div>
+                                <div>
+                                    <label for="company" class="form-label">Company Name</label>
+                                    <input type="text" id="company" name="company" placeholder="Your Company" class="form-input" aria-label="Company Name">
+                                </div>
+                            </div>
+
+                            <!-- Service Interest Dropdown -->
+                            <div>
+                                <label for="service" class="form-label">Service Interest</label>
+                                <select id="service" name="service" class="form-input" aria-label="Service Interest">
+                                    <option value="" disabled selected>Select a service...</option>
+                                    <option value="growtify">Growtify - Growth & Marketing</option>
+                                    <option value="regify">Regify - Registration & Compliance</option>
+                                    <option value="whofit">WhoFit - Talent & Recruitment</option>
+                                    <option value="all">All Solutions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Message Textarea -->
+                            <div>
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or how we can help..." class="form-input" aria-label="Your Message"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="pt-2">
+                                <button type="submit" class="btn-primary w-full sm:w-auto px-10 py-3.5 text-base">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                                    <span>Send Message</span>
+                                </button>
+                            </div>
+
+                            <p class="text-xs text-slate-500 mt-2">By submitting this form, you agree to be contacted by our team. We respect your privacy and will never share your information.</p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Contact Information (2 columns wide) -->
+                <div class="lg:col-span-2 space-y-6 reveal-right">
+
+                    <!-- Email Card -->
+                    <a href="mailto:tehillasolutions@gmail.com" class="glass-card glass-card-blue block p-6 group cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold text-sm mb-1">Email Us</h3>
+                                <p class="text-blue-400 text-sm hover:text-blue-300 transition-colors">tehillasolutions@gmail.com</p>
+                                <p class="text-slate-500 text-xs mt-1">We respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Phone 1 Card -->
+                    <a href="tel:+2348065892630" class="glass-card glass-card-violet block p-6 group cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                                <svg class="w-5 h-5 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold text-sm mb-1">Call Us (Line 1)</h3>
+                                <p class="text-violet-400 text-sm hover:text-violet-300 transition-colors">+234 806 589 2630</p>
+                                <p class="text-slate-500 text-xs mt-1">Available during office hours</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Phone 2 Card -->
+                    <a href="tel:+2347082481145" class="glass-card glass-card-violet block p-6 group cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                                <svg class="w-5 h-5 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold text-sm mb-1">Call Us (Line 2)</h3>
+                                <p class="text-violet-400 text-sm hover:text-violet-300 transition-colors">+234 708 248 1145</p>
+                                <p class="text-slate-500 text-xs mt-1">Alternative contact line</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp CTA Card -->
+                    <a href="https://wa.me/2348065892630" target="_blank" rel="noopener" class="block p-6 rounded-2xl bg-gradient-to-br from-green-600/20 to-green-700/10 border border-green-500/20 hover:border-green-500/40 transition-all duration-300 group hover:shadow-lg hover:shadow-green-500/10 hover:-translate-y-1">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-green-500/20 border border-green-500/30 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-white font-semibold text-sm mb-0.5">Chat on WhatsApp</h3>
+                                <p class="text-green-400/80 text-sm">Get instant replies, tap to chat now</p>
+                            </div>
+                            <svg class="w-5 h-5 text-green-400/50 group-hover:text-green-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </div>
+                    </a>
+
+                    <!-- Office Hours Card -->
+                    <div class="glass-card p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold text-sm mb-1">Office Hours</h3>
+                                <p class="text-slate-300 text-sm">Monday - Friday</p>
+                                <p class="text-amber-400 text-sm font-medium">9:00 AM - 6:00 PM WAT</p>
+                                <p class="text-slate-500 text-xs mt-1">West Africa Time (GMT+1)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links Card -->
+                    <div class="glass-card p-6">
+                        <h3 class="text-white font-semibold text-sm mb-4">Connect With Us</h3>
+                        <div class="flex flex-wrap items-center gap-3">
+                            <a href="https://www.instagram.com/tehillaamplifysolutions" target="_blank" rel="noopener" aria-label="Follow us on Instagram" class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-pink-400 hover:bg-pink-500/10 hover:border-pink-500/20 transition-all">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                            </a>
+                            <a href="https://www.facebook.com/share/1HNxK9GtK4/" target="_blank" rel="noopener" aria-label="Follow us on Facebook" class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/20 transition-all">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@tehillaamplify" target="_blank" rel="noopener" aria-label="Follow us on TikTok" class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tasy-tehilla-amplify-solutions-724598404" target="_blank" rel="noopener" aria-label="Connect on LinkedIn" class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:bg-blue-600/10 hover:border-blue-600/20 transition-all">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="https://x.com/TehillaAmplify" target="_blank" rel="noopener" aria-label="Follow us on X" class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                        </div>
+                        <p class="text-slate-500 text-xs mt-4">Follow us for updates, tips, and success stories.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-line max-w-7xl mx-auto"></div>
+
+    <!-- Book Consultation Section -->
+    <section id="consultation" class="relative py-20 lg:py-28 overflow-hidden">
+        <!-- Decorative Orb -->
+        <div class="gradient-orb gradient-orb-violet w-[500px] h-[500px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 reveal">
+                    <span class="badge badge-violet mb-6">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        Free Consultation
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6">
+                        Book A Free <span class="gradient-text">Consultation</span>
+                    </h2>
+                    <p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto">
+                        Not sure where to start? Our experts will assess your needs and provide personalized recommendations, completely free, no strings attached.
+                    </p>
+                </div>
+
+                <!-- What's Included Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 reveal">
+                    <div class="glass-card p-6 text-center">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-sm mb-2">Business Assessment</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">We analyze your current position, market, and growth potential to identify key opportunities.</p>
+                    </div>
+                    <div class="glass-card p-6 text-center">
+                        <div class="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-sm mb-2">Custom Strategy</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Get a tailored roadmap with actionable steps aligned to your specific goals and budget.</p>
+                    </div>
+                    <div class="glass-card p-6 text-center sm:col-span-2 lg:col-span-1">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-sm mb-2">Expert Guidance</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Speak directly with our specialists who have helped dozens of businesses amplify their growth.</p>
+                    </div>
+                </div>
+
+                <!-- Consultation CTA Card -->
+                <div class="glass-card glass-card-blue p-8 sm:p-12 text-center reveal">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-orange-500 flex items-center justify-center mx-auto mb-6 animate-pulse-glow">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Ready to Get Started?</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-lg mx-auto mb-8">
+                        Schedule your free 30-minute consultation today. No obligations, no pressure, just honest advice to help your business grow.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="https://wa.me/2348065892630?text=Hello%20TAS!%20I%20would%20like%20to%20book%20a%20free%20consultation." target="_blank" rel="noopener" class="btn-whatsapp px-8 py-3.5 text-base w-full sm:w-auto">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Book via WhatsApp
+                        </a>
+                        <a href="tel:+2348065892630" class="btn-secondary px-8 py-3.5 text-base w-full sm:w-auto">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            Call to Schedule
+                        </a>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-6">Consultations available Monday - Friday, 9 AM - 6 PM WAT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-line max-w-7xl mx-auto"></div>
+
+    <!-- Map/Location Placeholder -->
+    <section class="relative py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Our Location</h2>
+                <p class="text-slate-400 text-sm">Find us or connect with us remotely, we serve clients across Nigeria and beyond.</p>
+            </div>
+            <div class="reveal">
+                <div class="w-full h-72 sm:h-96 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-700 flex items-center justify-center text-slate-500 text-sm border border-white/5 relative overflow-hidden">
+                    <!-- Decorative grid overlay -->
+                    <div class="absolute inset-0 bg-dots opacity-30"></div>
+                    <div class="relative z-10 text-center">
+                        <svg class="w-12 h-12 text-slate-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <p class="text-slate-500 text-sm font-medium"></p>
+                        <p class="text-slate-600 text-xs mt-1">Interactive map integration coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-line max-w-7xl mx-auto"></div>
+
+    <!-- Quick Connect Section -->
+    <section class="relative py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Quick Connect</h2>
+                <p class="text-slate-400 text-sm">Choose the fastest way to reach us. Tap any option to connect instantly.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <!-- Call Us Card -->
+                <a href="tel:+2348065892630" class="reveal reveal-delay-1 group block">
+                    <div class="glass-card glass-card-violet p-8 text-center h-full">
+                        <div class="w-16 h-16 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 group-hover:bg-violet-500/20 transition-all duration-300">
+                            <svg class="w-7 h-7 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        </div>
+                        <h3 class="text-white font-bold text-lg mb-2">Call Us</h3>
+                        <p class="text-violet-400 text-sm font-medium mb-1">+234 806 589 2630</p>
+                        <p class="text-slate-500 text-xs">Tap to call directly</p>
+                    </div>
+                </a>
+
+                <!-- Email Us Card -->
+                <a href="mailto:tehillasolutions@gmail.com" class="reveal reveal-delay-2 group block">
+                    <div class="glass-card glass-card-blue p-8 text-center h-full">
+                        <div class="w-16 h-16 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-300">
+                            <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h3 class="text-white font-bold text-lg mb-2">Email Us</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-1">tehillasolutions@gmail.com</p>
+                        <p class="text-slate-500 text-xs">We reply within 24 hours</p>
+                    </div>
+                </a>
+
+                <!-- WhatsApp Us Card -->
+                <a href="https://wa.me/2348065892630" target="_blank" rel="noopener" class="reveal reveal-delay-3 group block">
+                    <div class="glass-card p-8 text-center h-full border-green-500/10 hover:border-green-500/30 hover:shadow-[0_0_60px_-12px_rgba(37,211,102,0.3)]">
+                        <div class="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-300">
+                            <svg class="w-7 h-7 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </div>
+                        <h3 class="text-white font-bold text-lg mb-2">WhatsApp Us</h3>
+                        <p class="text-green-400 text-sm font-medium mb-1">Chat Now</p>
+                        <p class="text-slate-500 text-xs">Get instant replies</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-line max-w-7xl mx-auto"></div>
+
+    <!-- FAQ Section -->
+    <section class="relative py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12 reveal">
+                    <span class="badge badge-blue mb-6">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        FAQ
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Frequently Asked Questions</h2>
+                    <p class="text-slate-400 text-sm">Got questions? We've got answers. If you can't find what you're looking for, reach out directly.</p>
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="space-y-4 reveal" id="faq-accordion">
+
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item glass-card overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left group" aria-expanded="false">
+                            <span class="text-white font-semibold text-sm sm:text-base pr-4">What services does Tehilla Amplify Solutions offer?</span>
+                            <span class="faq-icon w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-white/10 transition-colors">
+                                <svg class="w-4 h-4 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-slate-400 text-sm leading-relaxed">We offer three core solutions: <strong class="text-emerald-400">Growtify</strong> for digital growth, marketing, and branding; <strong class="text-amber-400">Regify</strong> for business registration, compliance, and documentation; and <strong class="text-cyan-400">WhoFit</strong> for talent acquisition, recruitment, and team building. Each solution is tailored to help your business become more visible, structured, and connected.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item glass-card overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left group" aria-expanded="false">
+                            <span class="text-white font-semibold text-sm sm:text-base pr-4">How much does a consultation cost?</span>
+                            <span class="faq-icon w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-white/10 transition-colors">
+                                <svg class="w-4 h-4 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-slate-400 text-sm leading-relaxed">Our initial consultation is completely free! We believe in understanding your needs before making any commitments. During the consultation, we'll discuss your business goals, identify challenges, and recommend the right solutions, all at no cost to you.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item glass-card overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left group" aria-expanded="false">
+                            <span class="text-white font-semibold text-sm sm:text-base pr-4">How long does it take to see results?</span>
+                            <span class="faq-icon w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-white/10 transition-colors">
+                                <svg class="w-4 h-4 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-slate-400 text-sm leading-relaxed">Timelines vary by service. Business registration through Regify can be completed in as little as 1–2 weeks. Marketing strategies via Growtify typically show initial results within 4–8 weeks. Talent recruitment through WhoFit depends on the role complexity, but we aim to present qualified candidates within 2–4 weeks.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item glass-card overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left group" aria-expanded="false">
+                            <span class="text-white font-semibold text-sm sm:text-base pr-4">Do you work with businesses outside Nigeria?</span>
+                            <span class="faq-icon w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-white/10 transition-colors">
+                                <svg class="w-4 h-4 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-slate-400 text-sm leading-relaxed">While we are based in Nigeria, our digital services, particularly Growtify's marketing and branding solutions, are available to businesses worldwide. For Regify, we currently specialize in Nigerian business registration and compliance, but we're expanding our reach. Contact us to discuss your specific needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item glass-card overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left group" aria-expanded="false">
+                            <span class="text-white font-semibold text-sm sm:text-base pr-4">What makes TAS different from other agencies?</span>
+                            <span class="faq-icon w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-white/10 transition-colors">
+                                <svg class="w-4 h-4 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-slate-400 text-sm leading-relaxed">TAS is a one-stop solution for business amplification. Unlike single-service agencies, we address growth, compliance, and talent under one roof, ensuring everything works together seamlessly. Our personalized approach means you get strategies tailored to your unique situation, not cookie-cutter templates. We're partners in your growth, not just vendors.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Still have questions -->
+                <div class="text-center mt-10 reveal">
+                    <p class="text-slate-400 text-sm mb-4">Still have questions?</p>
+                    <a href="https://wa.me/2348065892630?text=Hello%20TAS!%20I%20have%20a%20question." target="_blank" rel="noopener" class="btn-whatsapp px-6 py-3">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-slate-950 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+                <!-- Brand Column -->
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 rounded-xl overflow-hidden bg-gradient-to-br from-cyan-500 to-orange-500 flex items-center justify-center font-bold text-white text-lg"><img src="t.jpeg" alt="TAS" class="w-full h-full object-cover"></div>
+                        <div>
+                            <span class="text-white font-bold text-lg">TAS</span>
+                            <span class="block text-[10px] text-slate-500 -mt-1 tracking-wider uppercase">Tehilla Amplify Solutions</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Built To Amplify. Designed To Scale. We help businesses become visible, structured, and connected.</p>
+                    <div class="flex items-center gap-3">
+                        <a href="https://www.instagram.com/tehillaamplifysolutions" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://www.facebook.com/share/1HNxK9GtK4/" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://www.tiktok.com/@tehillaamplify" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                        <a href="https://www.linkedin.com/in/tasy-tehilla-amplify-solutions-724598404" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="https://x.com/TehillaAmplify" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    </div>
+                </div>
+                <!-- Solutions Column -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-6">Solutions</h4>
+                    <ul class="space-y-3">
+                        <li><a href="growtify.html" class="text-slate-400 hover:text-emerald-400 text-sm transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400/50"></span>Growtify</a></li>
+                        <li><a href="regify.html" class="text-slate-400 hover:text-amber-400 text-sm transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400/50"></span>Regify</a></li>
+                        <li><a href="whofit.html" class="text-slate-400 hover:text-cyan-400 text-sm transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400/50"></span>WhoFit</a></li>
+                        <li><a href="solutions.html" class="text-slate-400 hover:text-white text-sm transition-colors">All Solutions</a></li>
+                    </ul>
+                </div>
+                <!-- Company Column -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-slate-400 hover:text-white text-sm transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-slate-400 hover:text-white text-sm transition-colors">Contact</a></li>
+                        <li><a href="contact.html#consultation" class="text-slate-400 hover:text-white text-sm transition-colors">Book Consultation</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Column -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-6">Get In Touch</h4>
+                    <ul class="space-y-3">
+                        <li><a href="mailto:tehillasolutions@gmail.com" class="text-slate-400 hover:text-blue-400 text-sm transition-colors flex items-center gap-2"><svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>tehillasolutions@gmail.com</a></li>
+                        <li><a href="tel:+2348065892630" class="text-slate-400 hover:text-blue-400 text-sm transition-colors flex items-center gap-2"><svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>+234 806 589 2630</a></li>
+                        <li><a href="tel:+2347082481145" class="text-slate-400 hover:text-blue-400 text-sm transition-colors flex items-center gap-2"><svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>+234 708 248 1145</a></li>
+                        <li><a href="https://wa.me/2348065892630" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-2 px-4 py-2 text-sm font-medium text-white bg-green-600 hover:bg-green-500 rounded-full transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bottom Bar -->
+            <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-slate-500 text-sm">&copy; 2026 Tehilla Amplify Solutions. All rights reserved.</p>
+                <p class="text-slate-600 text-xs">Built To Amplify. Designed To Scale. BY QORVMEDIA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Accordion Script (page-specific) -->
+    <script>
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-trigger');
+
+            faqItems.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.faq-icon svg');
+                    const isOpen = !content.classList.contains('hidden');
+
+                    // Close all other items
+                    faqItems.forEach(otherTrigger => {
+                        const otherContent = otherTrigger.nextElementSibling;
+                        const otherIcon = otherTrigger.querySelector('.faq-icon svg');
+                        if (otherTrigger !== trigger) {
+                            otherContent.classList.add('hidden');
+                            otherTrigger.setAttribute('aria-expanded', 'false');
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Toggle current item
+                    if (isOpen) {
+                        content.classList.add('hidden');
+                        this.setAttribute('aria-expanded', 'false');
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.classList.remove('hidden');
+                        this.setAttribute('aria-expanded', 'true');
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

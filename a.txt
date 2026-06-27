@@ -1,0 +1,20 @@
+Add tma testimonial section to Whofit page
+
+"Bruhhh so far I'm loving this ifechukwu energy mehn, she's really really hardworking let's see 
+You didn't lie about her"
+
+Somtochukwu
+
+
+"Good evening sir 
+I just wanted to tell you that I was selected for the job.
+
+Thank you so much for referring me and for your support throughout the process"
+
+Akpudo Ifechukwu Faustina
+
+"Sir my sister got the job. I really appreciate sir, thank you so much for making it possible. God bless you sir"
+
+Genevieve
+
+and for Akpudo Ifechukwu Faustina add this image to her logo "ife.jpeg" and also all the testimonial logo must have an image I will add them myself but put their initials in their alt so if I don't add image it will still look lovely
